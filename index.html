@@ -50,37 +50,55 @@
     <h1>リンクにアクセスする手順</h1>
     <div class="instructions">
         <ol>
-            <li>下のどれかのリンクにアクセス（１絶対がおすすめ）</li>
-            <li>真ん中の検索欄に「mariokartpc」と打って検索</li>
-            <li>一番上の「Mario Kart PC」をタップ</li>
-            <li>▼ Click on the game box to begin ▼の下の画像をタップ</li>
-            <li>online raceをタップ</li>
-            <li>VS modeをタップ</li>
-            <li>（登録済みなら必要なし）Registerをタップ</li>
+            <li>chromeでこのサイトに入る</li>
+                        <li>下のどれかのリンクにアクセス（１絶対がおすすめ）</li>
+            
             <li>
-                （登録済みなら必要なし）Choose a username に名前、<br>
-                Choose a password: に簡単なパスワード、<br>
-                Re-enter password: にもう一回同じパスワードを入力してsubmitを押す
+    <input type="text" id="textToCopy" value="lolbeans.io"">
+    <button onclick="copyText()">テキストをコピー</button>
+
+                        <li>下のどれかのリンクにアクセス（１絶対がおすすめ）</li>
+
+<li>さっきコピーした文真ん中の欄にを貼り付け、検索(enter) 広告が出てたら&#9747;</li>
+            <li>**（ソロの場合）**Nameに名前を入力してPLAYを押す</li>
+            <li>**（複数人の場合）**上の+PARTYをタップ</li>
+            <li>**（複数人の場合）** **(主催者)**　CREATE PARTY をタップして、新しい部屋を作り、
+                ROOM:CODE の右のアルファベット５文字を記憶するか選択してコピー、
+                チャットに貼り付けておくと良い　NAME二名前を入力　人が集まったらPLAY </li>
+            <li>**（複数人の場合）** **(入る人)**チャットにコードが多分送られてるから、それを
+                コピーして、上の+PARTY→Enter ROOM CODEの下の欄に貼り付け→JOIN で入れる
+                Nameに名前を入力　
             </li>
-            <li>（登録済みなら必要なし）画面が変わったら下のback to online modeをタップ</li>
-            <li>
-                （登録済みの人のみ）usernameに決めた名前、<br>
-                passwordにさっき決めたパスワードを入力し、submitを押す
-            </li>
-            <li>キャラクターを選択</li>
-            <li>相手が来るのを待つ</li>
+
+
         </ol>
     </div>
 <body>
+    <script>
+        function copyText() {
+            // コピーしたいテキストを取得
+            const textElement = document.getElementById("textToCopy");
+
+            // テキストフィールドを選択する
+            textElement.select();
+            textElement.setSelectionRange(0, 99999); // モバイル対応のために選択範囲を設定
+
+            try {
+                // 選択したテキストをコピー
+                document.execCommand("copy");
+                alert("テキストがコピーされました: " + textElement.value);
+            } catch (err) {
+                alert("コピーに失敗しました: " + err);
+            }
+
+            // 選択を解除する（視覚的な効果のため）
+            window.getSelection().removeAllRanges();
+        }
+    </script>
     <h1>どれかにアクセス</h1>
     <ul>
-        <li><a href="https://vpvvvokegwwvvegexvsgrgrjgeigerigrig.roundrockisd.online/" target="_blank">リンク１</a></li>
-        <li><a href="https://stella.ccsd.store/" target="_blank">リンク3</a></li>
-        <li><a href="https://tetris-play.vercel.app/" target="_blank">リンク3</a></li>
-        <li><a href="https://ogin.roundrockisd.online/" target="_blank">リンク3</a></li>
-        <li><a href="https://dashboard.theoceancleanup.info/" target="_blank">リンク3</a></li>
-        <li><a href="https://beta.theoceancleanup.info/" target="_blank">リンク3</a></li>
-        <li><a href="https://demo.theoceancleanup.info/" target="_blank">リンク3</a></li>
+        <li><a href="https://demo.theoceancleanup.info/" target="_blank">リンク１</a></li>
+
     </ul>
 </body>
 </html>
